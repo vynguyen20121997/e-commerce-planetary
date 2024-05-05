@@ -7,7 +7,7 @@ import { TitleText, TypingText } from '../../components/homepage';
 import Card from '../../components/product/Card';
 import { Planets } from '../../constants';
 import styles from '../../styles';
-import { staggerContainer } from '../../utils/motion';
+import { navVariants, staggerContainer } from '../../utils/motion';
 
 const Products = () => {
   const [ref, { width }] = useMeasure();
@@ -49,6 +49,9 @@ const Products = () => {
       </motion.div>
       <div className="h-[200px]  mb-32 mt-10">
         <motion.div
+          variants={navVariants}
+          initial="hidden"
+          whileInView="show"
           className=" absolute left-0 flex gap-4 "
           ref={ref}
           style={{ x: xTransalation }}
