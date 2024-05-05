@@ -1,27 +1,28 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { TitleText, TypingText } from "../../components/homepage";
-import Card from "../../components/product/Card";
-import { Planets } from "../../constants";
-import styles from "../../styles";
-import { staggerContainer } from "../../utils/motion";
-import { animate, motion, useMotionValue } from "framer-motion";
-import useMeasure from "react-use-measure";
+import { animate, motion, useMotionValue } from 'framer-motion';
+import { useEffect } from 'react';
+import useMeasure from 'react-use-measure';
+import { TitleText, TypingText } from '../../components/homepage';
+import Card from '../../components/product/Card';
+import { Planets } from '../../constants';
+import styles from '../../styles';
+import { staggerContainer } from '../../utils/motion';
 
 const Products = () => {
-  let [ref, { width }] = useMeasure();
+  const [ref, { width }] = useMeasure();
 
   const xTransalation = useMotionValue(0);
 
   useEffect(() => {
     let controls;
-    let finalPosition = -width / 2 - 8;
+    const finalPosition = -width / 2 - 8;
+    // eslint-disable-next-line prefer-const
     controls = animate(xTransalation, [0, finalPosition], {
-      ease: "linear",
+      ease: 'linear',
       duration: 20,
       repeat: Infinity,
-      repeatType: "loop",
+      repeatType: 'loop',
       repeatDelay: 0,
     });
     return controls.stop;
@@ -38,11 +39,11 @@ const Products = () => {
       >
         <TypingText title="The Planet" textStyles="text-center" />
         <TitleText
-          title={
+          title={(
             <>
               Choose your planet <br className="md:block hidden" />
             </>
-          }
+          )}
           textStyles="text-center"
         />
       </motion.div>

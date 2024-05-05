@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "../../styles";
-import { slideIn, staggerContainer, textVariant } from "../../utils/motion";
+import styles from '../../styles';
+import { slideIn, staggerContainer, textVariant } from '../../utils/motion';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -27,7 +27,7 @@ const Hero = () => (
       </div>
 
       <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+        variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
@@ -38,7 +38,7 @@ const Hero = () => (
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
         <motion.div
-          variants={slideIn("right", "tween", 0.2, 2)}
+          variants={slideIn('right', 'tween', 0.2, 2)}
           className="relative w-full md:-mt-[20px] -mt-[12px] z-20"
         >
           <a href="#explore">
@@ -51,7 +51,7 @@ const Hero = () => (
                 🚀 Explore the Universes!
               </button>
             </div>
-          </a>{" "}
+          </a>{' '}
         </motion.div>
       </motion.div>
     </motion.div>

@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import "../styles/globals.css";
+import Layout from '../components/Layout';
+import '../styles/globals.css';
 
 const RootLayout = ({ children }) => (
   <html lang="en">

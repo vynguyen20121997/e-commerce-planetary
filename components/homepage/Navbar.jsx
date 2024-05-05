@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "../../styles";
-import { navVariants } from "../../utils/motion";
+import styles from '../../styles';
+import { navVariants } from '../../utils/motion';
 
 const Navbar = () => (
   <motion.nav
@@ -14,7 +14,7 @@ const Navbar = () => (
   >
     <div className="absolute w-full inset-0 gradient-01" />
 
-    <div className={` flex justify-between `}>
+    <div className=" flex justify-between ">
       <img
         src="/search.svg"
         alt="search"
