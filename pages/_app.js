@@ -10,11 +10,11 @@ const MyApp = ({ Component, pageProps }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="preconnect" href="https://stijndv.com" />
       <meta name="title" content="Vy Porfolio: Planetary E-commere" />
-      <meta name="description" content="Checkout my page" key="desc" />
+      <meta name="description" content="Checkout vy page" key="desc" />
       <meta property="og:title" content="Vy Porfolio: Planetary E-commere" />
       <meta
         property="og:description"
-        content="Checkout my page"
+        content="Checkout vy page"
       />
       <meta
         property="og:image"
